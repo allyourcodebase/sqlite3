@@ -33,7 +33,7 @@ pub fn build(b: *std.Build) void {
     shell.root_module.addCSourceFile(.{
         .file = src.path("shell.c"),
     });
-    shell.linkLibrary(lib);
+    shell.root_module.linkLibrary(lib);
     const shell_install = b.addInstallArtifact(shell, .{
         .dest_sub_path = "sqlite3",
     });

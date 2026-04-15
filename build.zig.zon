@@ -7,7 +7,7 @@
             .hash = "N-V-__8AALNYqgDpBBECZ3Jn_VpVGjX4xX7uTSZg00tYjmy3",
         },
     },
-    .minimum_zig_version = "0.15.2",
+    .minimum_zig_version = "0.16.0",
     .paths = .{""},
     .fingerprint = 0x6edcd7115a4bcc0c,
 }
