@@ -40,8 +40,6 @@ pub fn build(b: *std.Build) void {
     b.getInstallStep().dependOn(&shell_install.step);
 
     const shell_run = b.addRunArtifact(shell);
-    if (b.args) |args| {
-        shell_run.addArgs(args);
-    }
+    shell_run.addPassthruArgs();
     run_step.dependOn(&shell_run.step);
 }
